@@ -1,5 +1,5 @@
 ## Course project for Getting and Cleaning Data
-## Laura Hardulak 25-Feb-2016
+## 25-Feb-2016 LH
 
 ## This script is run from the UCI HAR Dataset directory.
 
