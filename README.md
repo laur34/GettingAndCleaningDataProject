@@ -12,4 +12,4 @@ The means of the extracted data for each subject in each activity are what is sh
 codeBook.md contains explanantions of all the variables.
 
 To read the output file back into R:
-    read.table("secondTidySet.txt", header=T, sep=" ")
+    <code>read.table("secondTidySet.txt", header=T, sep=" ")</code>
