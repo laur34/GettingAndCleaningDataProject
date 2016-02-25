@@ -6,10 +6,11 @@ It combines the test and train data together, and then extracts the columns that
 
 It breaks the data down by activity--walking, walking upstairs, walking downstairs, sitting,
 standing, and laying--and labels the activities within the data set.
-And then it is broken down by subject number (there were 30 subjects).
+And then it is broken down by subject number (there were 30 subjects).<br>
 
-The means of the extracted data for each subject in each activity are what is shown in the output table.
-codeBook.md contains explanantions of all the variables.
+codeBook.md contains explanantions of all the variables.<br>
+
+The means of the extracted data for each subject in each activity are what is shown in the output table. <br>
 
 To read the output file back into R:
     <br><code>read.table("secondTidySet.txt", header=T, sep=" ")</code>
