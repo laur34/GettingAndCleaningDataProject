@@ -1,107 +1,109 @@
-# Code book for secondTidySet.txt summary file created from UCI HAR Dataset
-## This is modified from the features_info.txt file included in the original data.
+## Code book for secondTidySet.txt summary file created from UCI HAR Dataset
+### This is modified from the features_info.txt file included in the original data.
+<br>
+<b>"subject"</b><br>
+Number (1-30) of subject in the study
+<br>
+<br>
+<b>"activity"</b><br>
+	The activity the subject was doing:<br>
 
-"subject"
-	Number (1-30) of subject (participant) in the study
-
-"activity"
-	The activity the subject was doing:
-	1: WALKING
-	2: WALKING_UPSTAIRS
-	3: WALKING_DOWNSTAIRS
-	4: SITTING
-	5: STANDING
-	6: LAYING
-
+	1. WALKING
+	2. WALKING_UPSTAIRS
+	3. WALKING_DOWNSTAIRS
+	4. SITTING
+	5. STANDING
+	6. LAYING
+<br>
 The rest of the variables correspond to the columns that were extracted from the provided dataset which are means or standard deviations.
-	mean(): Mean value
-	std(): Standard deviation
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+<p>The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. </p>
 
-The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+<p>The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). </p>
 
-A Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+<p>A Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). </p>
 
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-"tBodyAcc-mean()-X" 
-"tBodyAcc-mean()-Y" 
-"tBodyAcc-mean()-Z" 
-"tGravityAcc-mean()-X" 
-"tGravityAcc-mean()-Y" 
-"tGravityAcc-mean()-Z" 
-"tBodyAccJerk-mean()-X" 
-"tBodyAccJerk-mean()-Y" 
-"tBodyAccJerk-mean()-Z" 
-"tBodyGyro-mean()-X" 
-"tBodyGyro-mean()-Y" 
-"tBodyGyro-mean()-Z" 
-"tBodyGyroJerk-mean()-X" 
-"tBodyGyroJerk-mean()-Y" 
-"tBodyGyroJerk-mean()-Z" 
-"tBodyAccMag-mean()" 
-"tGravityAccMag-mean()" 
-"tBodyAccJerkMag-mean()" 
-"tBodyGyroMag-mean()" 
-"tBodyGyroJerkMag-mean()" 
-"fBodyAcc-mean()-X" 
-"fBodyAcc-mean()-Y" 
-"fBodyAcc-mean()-Z" 
-"fBodyAcc-meanFreq()-X" 
-"fBodyAcc-meanFreq()-Y" 
-"fBodyAcc-meanFreq()-Z" 
-"fBodyAccJerk-mean()-X" 
-"fBodyAccJerk-mean()-Y" 
-"fBodyAccJerk-mean()-Z" 
-"fBodyAccJerk-meanFreq()-X" 
-"fBodyAccJerk-meanFreq()-Y" 
-"fBodyAccJerk-meanFreq()-Z" 
-"fBodyGyro-mean()-X" 
-"fBodyGyro-mean()-Y" 
-"fBodyGyro-mean()-Z" 
-"fBodyGyro-meanFreq()-X" 
-"fBodyGyro-meanFreq()-Y" 
-"fBodyGyro-meanFreq()-Z" 
-"fBodyAccMag-mean()" 
-"fBodyAccMag-meanFreq()" 
-"fBodyBodyAccJerkMag-mean()" 
-"fBodyBodyAccJerkMag-meanFreq()" 
-"fBodyBodyGyroMag-mean()" 
-"fBodyBodyGyroMag-meanFreq()" 
-"fBodyBodyGyroJerkMag-mean()" 
-"fBodyBodyGyroJerkMag-meanFreq()" 
-"tBodyAcc-std()-X" 
-"tBodyAcc-std()-Y" 
-"tBodyAcc-std()-Z" 
-"tGravityAcc-std()-X" 
-"tGravityAcc-std()-Y" 
-"tGravityAcc-std()-Z" 
-"tBodyAccJerk-std()-X" 
-"tBodyAccJerk-std()-Y" 
-"tBodyAccJerk-std()-Z" 
-"tBodyGyro-std()-X" 
-"tBodyGyro-std()-Y" 
-"tBodyGyro-std()-Z" 
-"tBodyGyroJerk-std()-X" 
-"tBodyGyroJerk-std()-Y" 
-"tBodyGyroJerk-std()-Z" 
-"tBodyAccMag-std()" 
-"tGravityAccMag-std()" 
-"tBodyAccJerkMag-std()" 
-"tBodyGyroMag-std()" 
-"tBodyGyroJerkMag-std()" 
-"fBodyAcc-std()-X" 
-"fBodyAcc-std()-Y" 
-"fBodyAcc-std()-Z" 
-"fBodyAccJerk-std()-X" 
-"fBodyAccJerk-std()-Y" 
-"fBodyAccJerk-std()-Z" 
-"fBodyGyro-std()-X" 
-"fBodyGyro-std()-Y" 
-"fBodyGyro-std()-Z" 
-"fBodyAccMag-std()" 
-"fBodyBodyAccJerkMag-std()" 
-"fBodyBodyGyroMag-std()" 
-"fBodyBodyGyroJerkMag-std()"
+<p>These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.</p>
+The variables are the following: <br>
+<b>
+"tBodyAcc-mean()-X" <br>
+"tBodyAcc-mean()-Y" <br>
+"tBodyAcc-mean()-Z" <br>
+"tGravityAcc-mean()-X" <br>
+"tGravityAcc-mean()-Y" <br>
+"tGravityAcc-mean()-Z" <br>
+"tBodyAccJerk-mean()-X" <br>
+"tBodyAccJerk-mean()-Y" <br>
+"tBodyAccJerk-mean()-Z" <br>
+"tBodyGyro-mean()-X" <br>
+"tBodyGyro-mean()-Y" <br>
+"tBodyGyro-mean()-Z" <br>
+"tBodyGyroJerk-mean()-X" <br>
+"tBodyGyroJerk-mean()-Y" <br>
+"tBodyGyroJerk-mean()-Z" <br>
+"tBodyAccMag-mean()" <br>
+"tGravityAccMag-mean()" <br>
+"tBodyAccJerkMag-mean()" <br>
+"tBodyGyroMag-mean()" <br>
+"tBodyGyroJerkMag-mean()" <br>
+"fBodyAcc-mean()-X" <br>
+"fBodyAcc-mean()-Y" <br>
+"fBodyAcc-mean()-Z" <br>
+"fBodyAcc-meanFreq()-X" <br>
+"fBodyAcc-meanFreq()-Y" <br>
+"fBodyAcc-meanFreq()-Z" <br>
+"fBodyAccJerk-mean()-X" <br>
+"fBodyAccJerk-mean()-Y" <br>
+"fBodyAccJerk-mean()-Z" <br>
+"fBodyAccJerk-meanFreq()-X" <br>
+"fBodyAccJerk-meanFreq()-Y" <br>
+"fBodyAccJerk-meanFreq()-Z" <br>
+"fBodyGyro-mean()-X" <br>
+"fBodyGyro-mean()-Y" <br>
+"fBodyGyro-mean()-Z" <br>
+"fBodyGyro-meanFreq()-X" <br>
+"fBodyGyro-meanFreq()-Y" <br>
+"fBodyGyro-meanFreq()-Z" <br>
+"fBodyAccMag-mean()" <br>
+"fBodyAccMag-meanFreq()" <br>
+"fBodyBodyAccJerkMag-mean()" <br>
+"fBodyBodyAccJerkMag-meanFreq()" <br>
+"fBodyBodyGyroMag-mean()" <br>
+"fBodyBodyGyroMag-meanFreq()" <br>
+"fBodyBodyGyroJerkMag-mean()" <br>
+"fBodyBodyGyroJerkMag-meanFreq()" <br>
+"tBodyAcc-std()-X" <br>
+"tBodyAcc-std()-Y" <br>
+"tBodyAcc-std()-Z" <br>
+"tGravityAcc-std()-X" <br>
+"tGravityAcc-std()-Y" <br>
+"tGravityAcc-std()-Z" <br>
+"tBodyAccJerk-std()-X" <br>
+"tBodyAccJerk-std()-Y" <br>
+"tBodyAccJerk-std()-Z" <br>
+"tBodyGyro-std()-X" <br>
+"tBodyGyro-std()-Y" <br>
+"tBodyGyro-std()-Z" <br>
+"tBodyGyroJerk-std()-X" <br>
+"tBodyGyroJerk-std()-Y" <br>
+"tBodyGyroJerk-std()-Z" <br>
+"tBodyAccMag-std()" <br>
+"tGravityAccMag-std()" <br>
+"tBodyAccJerkMag-std()" <br>
+"tBodyGyroMag-std()" <br>
+"tBodyGyroJerkMag-std()" <br>
+"fBodyAcc-std()-X" <br>
+"fBodyAcc-std()-Y" <br>
+"fBodyAcc-std()-Z" <br>
+"fBodyAccJerk-std()-X" <br>
+"fBodyAccJerk-std()-Y" <br>
+"fBodyAccJerk-std()-Z" <br>
+"fBodyGyro-std()-X" <br>
+"fBodyGyro-std()-Y" <br>
+"fBodyGyro-std()-Z" <br>
+"fBodyAccMag-std()" <br>
+"fBodyBodyAccJerkMag-std()" <br>
+"fBodyBodyGyroMag-std()" <br>
+"fBodyBodyGyroJerkMag-std()"<br>
+</b>
