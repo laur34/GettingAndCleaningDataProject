@@ -15,7 +15,7 @@ Number (1-30) of subject in the study
 	5. STANDING
 	6. LAYING
 <br>
-The rest of the variables correspond to the columns that were extracted from the provided dataset which are means or standard deviations.
+The rest of the variables correspond to the columns that were extracted from the provided dataset which are means or standard deviations. <br>
 <b>
 "tBodyAcc-mean()-X" <br>
 "tBodyAcc-mean()-Y" <br>
